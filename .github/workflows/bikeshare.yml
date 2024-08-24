@@ -79,10 +79,10 @@ jobs:
     - name: Repo Checkout
       uses: actions/checkout@v2
       
-    - uses: actions/download-artifact@v3
-      with:
-        name: my-build-package
-        path: bikeshare_project/bikeshare_model_api
+    #- uses: actions/download-artifact@v3
+    #  with:
+    #    name: my-build-package
+    #    path: bikeshare_project/bikeshare_model_api
         
     - name: Login to Docker hub
       env:
