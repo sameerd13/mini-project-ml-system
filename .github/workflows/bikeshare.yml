@@ -1,4 +1,4 @@
-name: Push a Docker Image
+name: Bike Share Prediction Train Test Build and Push Docker
 
 on:
   push:
@@ -65,8 +65,6 @@ jobs:
           path: bikeshare_project/bikeshare_model/trained_models
       - name: Install dependencies
         run: pip install --upgrade build
-      - name: Change Directory
-        run: cd bikeshare_project
       - name: Build package
         run: python -m build
       - uses: actions/upload-artifact@v3
