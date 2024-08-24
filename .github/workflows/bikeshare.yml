@@ -96,7 +96,7 @@ jobs:
       env:
         #DOCKER_USER: ${{ secrets.DOCKER_USER_NAME }}
         DOCKER_USER: sameerd13
-      run: docker build . -f Dockerfile -t $DOCKER_USER/bikeshare-fastapi2:latest
+      run: docker build . -f bikeshare_project/Dockerfile -t $DOCKER_USER/bikeshare-fastapi2:latest
       
     - name: Push the Docker Image
       env:
